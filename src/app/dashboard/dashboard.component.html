@@ -1,0 +1,70 @@
+<div class="col-md-10 content">
+  <div class="container"><br><br>
+
+    <div class="col-md-4">
+        <div class="alert alert-info">
+        <div class="panel-body">
+            <div class="con_ina">
+            <b> Team Details </b> <br>
+            <span>Total Teams : </span><span>{{ totalTeams }}</span><br>
+            <span>Measure Available : </span><span>{{ totalReports }}</span><br>
+
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="alert alert-success">
+        <div class="panel-body">
+            <div class="con_ina">
+            <b> Top Teams </b> <br>
+            <span *ngFor="let team of topTeams">{{ team }}<br></span>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="alert alert-danger">
+        <div class="panel-body">
+            <div class="con_ina">
+            <b> Bottom Teams </b> <br>
+            <span *ngFor="let team of bottomTeams">{{ team }}<br></span>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="alert alert-success">
+        <div class="panel-body">
+            <div class="con_ina">
+            <b> Top Measure </b> <br>
+              <span *ngFor="let vm of topMeasure">{{ vm }}<br></span>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="alert alert-danger">
+        <div class="panel-body">
+            <div class="con_ina">
+            <b> Bottom Measure </b> <br>
+            <span *ngFor="let vm of bottomTeams">{{ vm }}<br></span>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="alert alert-warning">
+        <div class="panel-body">
+            <div class="con_ina">
+            <b> Notes </b> <br>
+            <span *ngFor="let note of notes">{{ note }}<br></span>
+            </div>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
